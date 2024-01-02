@@ -1,3 +1,3 @@
-![login](https://github.com/fractalxg/portfolio-live-chat/assets/147837025/b3cc847d-05f1-497b-8327-297f15eb61ef)
+![login](https://github.com/fractalxg/portfolio-live-chat/assets/147837025/74964c91-3911-4b71-8cac-eaa06d6ca7aa)
 
 Aplicação web para chat utilizando web sockets
