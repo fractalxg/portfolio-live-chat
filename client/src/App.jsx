@@ -1,7 +1,10 @@
+import Home from "../routes/Home"
+
 function App() {
   
   return (
     <>
+    <Home />
     </>
   )
 }
