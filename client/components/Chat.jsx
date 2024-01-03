@@ -4,6 +4,7 @@ import { IoSend } from "react-icons/io5";
 import { LuMessagesSquare } from "react-icons/lu";
 import Message from "./Message.jsx";
 import RevealY from "./Animation.jsx";
+import { useTranslation } from "react-i18next";
 
 const Chat = ({ socket, username, room }) => {
   const chat = useRef(null);
@@ -11,6 +12,7 @@ const Chat = ({ socket, username, room }) => {
   const [currentMessage, setCurrentMessage] = useState("");
   const [messageList, setMessageList] = useState([]);
   const [messageIcon, setMessageIcon] = useState(true);
+  const [t, i18n] = useTranslation("global")
 
   const sendMessage = async () => {
     const timeElapsed = Date.now();
@@ -67,7 +69,7 @@ const Chat = ({ socket, username, room }) => {
     <div className="chat-window">
       <RevealY>
         <div className="chat-header">
-          <p>Room ID: {room}</p>
+          <p>{t("chat.room_id")}{room}</p>
         </div>
         <div className="chat-body-background">
           <div ref={chat} className="chat-body">
@@ -82,7 +84,7 @@ const Chat = ({ socket, username, room }) => {
           <input
             ref={message}
             type="text"
-            placeholder="Write a message..."
+            placeholder={t("chat.chat_footer_placeholder")}
             onChange={(e) => {
               setCurrentMessage(e.target.value);
             }}

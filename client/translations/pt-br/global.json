@@ -1,0 +1,17 @@
+{   
+    "login": {
+        "login_container": "Entre em um Chat",
+        "name_label": "Nome",
+        "name_placeholder": "Digite seu nome",
+        "room_label": "ID da Sala",
+        "room_placeholder": "Digite o ID da sala",
+        "button": "Entrar",
+        "language_label": "Idioma",
+        "language_box_portuguese":"Português (PT-BR)",
+        "language_box_english":"Inglês (EN-US)"
+    },
+    "chat": {
+        "room_id": "ID da Sala: ",
+        "chat_footer_placeholder": "Escreva uma mensagem..."
+    }
+}

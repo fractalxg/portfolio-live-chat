@@ -1,0 +1,17 @@
+{   
+    "login": {
+        "login_container": "Join a Chat",
+        "name_label": "Name",
+        "name_placeholder": "Type your name",
+        "room_label": "Room ID",
+        "room_placeholder": "Type your room ID",
+        "button": "Join",
+        "language_label": "Language",
+        "language_box_portuguese":"Portuguese (PT-BR)",
+        "language_box_english":"English (EN-US)"
+    },
+    "chat": {
+        "room_id": "Room ID: ",
+        "chat_footer_placeholder": "Write a message..."
+    }
+}

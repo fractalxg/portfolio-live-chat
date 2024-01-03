@@ -14,7 +14,7 @@
   background-blend-mode: multiply;
 }
 .login {
-  display: flex;
+    display: grid;
   width: 550px;
   height: 100vh;
   background-color: #c294ff;
@@ -74,6 +74,7 @@ input:focus::placeholder {
   display: flex;
   width: 100%;
   justify-content: center;
+  align-items: center;
 }
 .button-container button {
   background-image: linear-gradient(to right, #1e11d3, #8a30ff);
@@ -97,6 +98,47 @@ input:focus::placeholder {
 label {
   font-size: 12px;
   position: absolute;
+}
+
+.language{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.language-selection-container{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language p{
+    padding: 0;
+    font-size: 15px;
+}
+
+.language-box{
+    display: grid;
+    margin-top: 110px;
+    position: absolute;
+    align-items: center;
+    background-color: #fff;
+    height: 60px;
+    width: 150px;
+    border: solid 1px #bebebe;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    visibility: hidden;
+}
+.language-box p{
+    font-size: 13px;
+    cursor: pointer;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+}
+.language-box p:hover{
+    background-color: #000;
+    color: #fff;
 }
 
 @media screen and (max-width: 550px) {

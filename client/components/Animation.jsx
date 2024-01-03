@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const RevealY = ({ children, width = "fit-content", delay }) => {
+export const RevealY = ({ children, width = "fit-content", delay }) => {
     return (
       <motion.div
         variants={{
