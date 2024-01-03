@@ -3,6 +3,7 @@ import "./Chat.css";
 import { IoSend } from "react-icons/io5";
 import { LuMessagesSquare } from "react-icons/lu";
 import Message from "./Message.jsx";
+import RevealY from "./Animation.jsx";
 
 const Chat = ({ socket, username, room }) => {
   const chat = useRef(null);
@@ -46,7 +47,7 @@ const Chat = ({ socket, username, room }) => {
   useEffect(() => {
     socket.on("receive_message", (data) => {
       setMessageList((list) => [...list, data]);
-	  setMessageIcon(false)
+      setMessageIcon(false);
     });
   }, [socket]);
 
@@ -55,41 +56,45 @@ const Chat = ({ socket, username, room }) => {
   }, [sendMessage]);
 
   const IconElement = () => {
-	return (
-		<div className="container-chat-icon">
-        	<LuMessagesSquare className="chat-icon" />
-        </div>
-	)
-  }
+    return (
+      <div className="container-chat-icon">
+        <LuMessagesSquare className="chat-icon" />
+      </div>
+    );
+  };
 
   return (
     <div className="chat-window">
-      <div className="chat-header">
-        <p>Room ID: {room}</p>
-      </div>
-      <div className="chat-body-background">
-        <div ref={chat} className="chat-body">
-          {messageIcon && <IconElement />}
-          <Message username={username} messageList={messageList} />
+      <RevealY>
+        <div className="chat-header">
+          <p>Room ID: {room}</p>
         </div>
-      </div>
+        <div className="chat-body-background">
+          <div ref={chat} className="chat-body">
+            {messageIcon && <IconElement />}
+            <Message username={username} messageList={messageList} />
+          </div>
+        </div>
+      </RevealY>
 
-      <div className="chat-footer">
-        <input
-          ref={message}
-          type="text"
-          placeholder="Write a message..."
-          onChange={(e) => {
-            setCurrentMessage(e.target.value);
-          }}
-          onKeyPress={(e) => {
-            e.key === "Enter" && sendMessage();
-          }}
-        />
-        <button onClick={sendMessage}>
-          <IoSend className="send-icon" />
-        </button>
-      </div>
+      <RevealY delay={0.1}>
+        <div className="chat-footer">
+          <input
+            ref={message}
+            type="text"
+            placeholder="Write a message..."
+            onChange={(e) => {
+              setCurrentMessage(e.target.value);
+            }}
+            onKeyPress={(e) => {
+              e.key === "Enter" && sendMessage();
+            }}
+          />
+          <button onClick={sendMessage}>
+            <IoSend className="send-icon" />
+          </button>
+        </div>
+      </RevealY>
     </div>
   );
 };
