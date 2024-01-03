@@ -22,9 +22,6 @@ const Message = ({ username, messageList }) => {
                 <p className="time">{messageContent.time}</p>
                 </div> 
                 
-                
-                
-                
               </div>
             </div>
           </div>
