@@ -18,9 +18,9 @@ const Message = ({ username, messageList }) => {
                 >{messageContent.message}</p>
                 </div>
                 
-                {/* <div className="time-container">
+                <div className="time-container">
                 <p className="time">{messageContent.time}</p>
-                </div> */}
+                </div> 
                 
                 
                 

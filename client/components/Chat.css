@@ -1,3 +1,13 @@
+.chat-header p{
+    display: flex;
+    width: 100%;
+    color: #363538;
+    font-weight: 600;
+    padding-bottom: 10px;
+    justify-content: center;
+
+}
+
 .chat-body-background {
     display: flex;
     justify-content: center;
@@ -18,6 +28,7 @@
 .chat-footer{
     display: flex;
     width: 330px;
+    
 }
 .chat-footer input {
     margin-top: 50px;
@@ -26,6 +37,9 @@
     border: none;
     border-radius: 10px;
     padding-left: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
    
 }
 .chat-footer input:focus{
@@ -43,6 +57,26 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.chat-footer button:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+.container-chat-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.chat-icon{
+    width: 100px;
+    height: 100px;
+    color: #36353846;
 }
 ::-webkit-scrollbar {
     width: 10px; 
