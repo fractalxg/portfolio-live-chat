@@ -1,3 +1,5 @@
+Aplicação Web em React e Node para chat com mensagens instantâneas utilizando Web Sockets (Socket IO).
+
 Versão em Português
 ![pt-login](https://github.com/fractalxg/portfolio-live-chat/assets/147837025/02f14ba7-f179-4147-9475-f1ec9421c37e)
 ![pt-chat-blank](https://github.com/fractalxg/portfolio-live-chat/assets/147837025/801e1ebc-f168-4dd1-8293-44483c22b191)
@@ -10,4 +12,4 @@ English Version
 ![chat-sender](https://github.com/fractalxg/portfolio-live-chat/assets/147837025/2b9c2214-a7fb-4216-a8b1-a938f648a249)
 ![chat-receiver](https://github.com/fractalxg/portfolio-live-chat/assets/147837025/ad63205d-6bfd-4e06-aa02-a01ed4fcefe4)
 
-Aplicação Web em React e Node para chat com mensagens instantâneas utilizando web sockets
+
