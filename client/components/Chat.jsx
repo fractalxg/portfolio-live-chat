@@ -46,12 +46,21 @@ const Chat = ({ socket, username, room }) => {
   useEffect(() => {
     socket.on("receive_message", (data) => {
       setMessageList((list) => [...list, data]);
+	  setMessageIcon(false);
     });
   }, [socket]);
 
   useEffect(() => {
     scrollToBottom();
   }, [sendMessage]);
+
+  const iconElement = () => {
+	return (
+		<div className="container-chat-icon">
+        	<LuMessagesSquare className="chat-icon" />
+        </div>
+	)
+  }
 
   return (
     <div className="chat-window">
@@ -60,9 +69,7 @@ const Chat = ({ socket, username, room }) => {
       </div>
       <div className="chat-body-background">
         <div ref={chat} className="chat-body">
-          <div className="container-chat-icon">
-            {messageIcon && <LuMessagesSquare className="chat-icon" />}
-          </div>
+          {messageIcon && <iconElement />}
           <Message username={username} messageList={messageList} />
         </div>
       </div>
