@@ -2,9 +2,10 @@
     display: flex;
     width: 550px;
     height: 100vh;
-    background-color: #8a30ff;
+    background-color: #c294ff;
     align-items: center;
     justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 .login-container{
@@ -50,7 +51,12 @@ input:focus::placeholder {
     padding-top: 23px;
     color: #363538;
   }
-.login-container button {
+  .button-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+.button-container button {
     background-image: linear-gradient(to right, #1e11d3, #8a30ff);
     cursor: pointer;
     height: 50px;
@@ -61,7 +67,6 @@ input:focus::placeholder {
     font-size: 18px;
     font-weight: 600;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
     
 }
 

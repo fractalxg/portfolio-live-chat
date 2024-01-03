@@ -43,8 +43,10 @@ const Login = () => {
               onChange={(e) => setRoom(e.target.value)}
             />
           </div>
+          <div className="button-container">
+           <button onClick={joinRoom}>Join</button>
+          </div>
           
-          <button onClick={joinRoom}>Join</button>
         </div>
       ) : (
         <Chat socket={socket} username={username} room={room} />
