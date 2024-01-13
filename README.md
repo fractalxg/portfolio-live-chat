@@ -1,5 +1,11 @@
-Aplicação Web em React e Node (e com responsividade para dispositivos móveis) para chat com mensagens instantâneas utilizando Web Sockets (Socket IO).
+## Descrição
+Aplicação Web em ReactJS e NodeJS (Express + Web Sockets/Socket IO) para chat com mensagens instantâneas.
 
+## Funcionalidades
+* Envio de mensagens em tempo real.
+* Idiomas: inglês e português.
+
+## Screenshots
 Versão em Português
 ![pt-login](https://github.com/fractalxg/portfolio-live-chat/assets/147837025/02f14ba7-f179-4147-9475-f1ec9421c37e)
 ![pt-chat-blank](https://github.com/fractalxg/portfolio-live-chat/assets/147837025/801e1ebc-f168-4dd1-8293-44483c22b191)
